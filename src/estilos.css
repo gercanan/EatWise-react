@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(37,35,45);
+    height: 100vh;
+}
+
+.cardDashboard{
+    border-color:rgb(14, 14, 12);
+    border-radius: 12px;
+    box-shadow: -2px -2px 10px rgba(228, 220, 220, 0.274);
+}
+
+.botonLanding {
+    background-color: #a8e7ca;
+    border-color: #25232d;
+    color: #25232d;
+    border-radius: 3;
+}
+
+.botonLanding:hover {
+    background-color: #25232d;
+    border-color: #25232d;
+}
+.botonLanding:focus, .botonLanding:active{
+    outline: none !important;
+    box-shadow: none;
+    background-color: #25232d;
+    border-color: #25232d;
+}
+.botonLanding:disabled{
+    background-color: #25232d;
+    color: #736e86;
+    border-color: #000000;
+}
+
+.botonForgot{
+    background-color: #00000000;
+    border-color: #00000000;
+    color: #25232d;
+    font-size: 0.9em;
+}
+
+.botonForgot:hover{
+    background-color: #00000000;
+    border-color: #00000000;
+    color: #25232d;
+}
+.botonForgot:active{
+    background-color: #00000000 !important;
+    border-color: #00000000 !important;
+    color: #25232d !important;
+}
+
+.custom-input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #25232d;
+    border-radius: 0;
+    color: black;
+    outline: none !important;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    border-color: #a8e7ca;
+}
+
+.card-title-large {
+    font-size: 1.5rem;
+
+}
+
+.cardLanding{
+    border-color:rgb(14, 14, 12);
+    border-radius: 12px;
+}
+
+.cardLanding:hover {
+    box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.274);
+    transition: all 0.3s linear;
+}
