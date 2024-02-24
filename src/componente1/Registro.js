@@ -10,7 +10,7 @@ import { guardarPaises } from '../feature/registrosSlice';
 
 
 const Registro = () => {
-    const campoEmail = useRef(null);
+    const campoUser = useRef(null);
     const campoPassword = useRef(null);
     const campoPais = useRef(null);
     const campoCalorias = useRef(null);
@@ -39,7 +39,7 @@ const Registro = () => {
 
         event.preventDefault();
         const bodyData = {
-            usuario: campoEmail.current.value,
+            usuario: campoUser.current.value,
             password: campoPassword.current.value,
             idPais: campoPais.current.value,
             caloriasDiarias: campoCalorias.current.value
@@ -77,8 +77,8 @@ const Registro = () => {
                 <Form onSubmit={fetchRegistro} className='m-3'>
                     <Row md>
                         <Form.Group controlId='formRegistroEmail' className='m-2'>
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control className='custom-input' required ref={campoEmail} type='email' placeholder='Example@email.com' />
+                            <Form.Label>User</Form.Label>
+                            <Form.Control className='custom-input' required ref={campoUser} type='text' placeholder='User' />
                         </Form.Group>
                     </Row>
                     <Row>

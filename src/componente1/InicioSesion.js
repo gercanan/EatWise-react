@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Spinner from 'react-bootstrap/Spinner';
 
 const InicioSesion = () => {
-    const campoEmail = useRef(null);
+    const campoUser = useRef(null);
     const campoPassword = useRef(null);
 
     const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const InicioSesion = () => {
     const [open, setOpen] = useState(false);
 
     const cambioInput = e => {
-        campoEmail.current.value && campoPassword.current.value ? setBotonLogin(true) : setBotonLogin(false);
+        campoUser.current.value && campoPassword.current.value ? setBotonLogin(true) : setBotonLogin(false);
     }
 
 
@@ -31,7 +31,7 @@ const InicioSesion = () => {
         setError(false);
 
         const bodyData = {
-            usuario: `${campoEmail.current.value}`,
+            usuario: `${campoUser.current.value}`,
             password: `${campoPassword.current.value}`
         }
 
@@ -67,8 +67,8 @@ const InicioSesion = () => {
                 <Form onSubmit={inicioUsuario} className='m-3'>
                     <Row md>
                         <Form.Group controlId='formInicioEmail' className='m-2'>
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control className='custom-input' required ref={campoEmail} type='email' placeholder='Example@email.com' onChange={cambioInput} />
+                            <Form.Label>User</Form.Label>
+                            <Form.Control className='custom-input' required ref={campoUser} type='text' placeholder='User' onChange={cambioInput} />
                         </Form.Group>
                         <Form.Group controlId='formInicioPassword' className='m-2'>
                             <Form.Label>Password</Form.Label>
